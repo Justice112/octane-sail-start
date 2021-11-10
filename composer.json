@@ -20,7 +20,8 @@
         "jiannei/laravel-schedule": "^1.0",
         "laravel/framework": "^8.40",
         "laravel/octane": "^1.0",
-        "laravel/tinker": "^2.5"
+        "laravel/tinker": "^2.5",
+        "nwidart/laravel-modules": "^8.2"
     },
     "require-dev": {
         "facade/ignition": "^2.5",
@@ -47,6 +48,7 @@
         ],
         "psr-4": {
             "App\\": "app/",
+            "Modules\\": "Modules/",
             "Database\\Factories\\": "database/factories/",
             "Database\\Seeders\\": "database/seeders/"
         }

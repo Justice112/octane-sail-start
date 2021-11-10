@@ -1,0 +1,2 @@
+$this->app->bind(\$NAMESPACE$\$INTERFACE_CLASS$::class, \$NAMESPACE_IMPL$\$IMPLEMENT_CLASS$::class);
+        $PLACEHOLDER$

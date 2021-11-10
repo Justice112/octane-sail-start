@@ -1,0 +1,72 @@
+<?php
+
+namespace $NAMESPACE$;
+
+use $NAMESPACE_INTERFACE$\$CLASS$;
+use Jade\ModulerCore\Abase\Service\BaseService;
+
+class $CLASS$Impl extends BaseService implements $CLASS$
+{
+    /*
+    |--------------------------------------------------------------------------
+    | 增：Create - Add
+    |--------------------------------------------------------------------------
+    */
+    public function createCategory($fields)
+    {
+    }
+
+    /*
+    |--------------------------------------------------------------------------
+    | 删：Delete
+    |--------------------------------------------------------------------------
+    */
+    public function deleteCategory($fields)
+    {
+    }
+
+    /*
+    |--------------------------------------------------------------------------
+    | 改：Update - Wave
+    |--------------------------------------------------------------------------
+    */
+    public function updateCategory($fields)
+    {
+    }
+
+    /*
+    |--------------------------------------------------------------------------
+    | 查：Find  -  Get
+    |--------------------------------------------------------------------------
+    */
+    public function getCategory($id)
+    {
+    }
+    public function findCategory($fields)
+    {
+    }
+    public function findCategories($fields)
+    {
+    }
+    public function searchCategories($fields)
+    {
+    }
+
+    /*
+    |--------------------------------------------------------------------------
+    | 管：Manage - Can
+    |--------------------------------------------------------------------------
+    */
+    public function tryManageCategory($fields)
+    {
+    }
+
+    /*
+    |--------------------------------------------------------------------------
+    | 统：Count
+    |--------------------------------------------------------------------------
+    */
+    public function countCategories($fields)
+    {
+    }
+}

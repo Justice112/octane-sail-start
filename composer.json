@@ -19,6 +19,7 @@
         "jiannei/laravel-response": "^4.0",
         "jiannei/laravel-schedule": "^1.0",
         "laravel/framework": "^8.40",
+        "laravel/octane": "^1.0",
         "laravel/tinker": "^2.5"
     },
     "require-dev": {

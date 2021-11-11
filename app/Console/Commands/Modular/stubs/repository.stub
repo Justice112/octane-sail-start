@@ -3,7 +3,7 @@
 namespace $NAMESPACE$;
 
 use Prettus\Repository\Contracts\RepositoryCriteriaInterface;
-use Jade\ModulerCore\Abase\Repository\RepositoryInterface;
+use APP\Abase\Repository\RepositoryInterface;
 
 interface $CLASS$ extends RepositoryInterface, RepositoryCriteriaInterface
 {

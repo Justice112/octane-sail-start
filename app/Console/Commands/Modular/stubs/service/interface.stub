@@ -2,7 +2,7 @@
 
 namespace $NAMESPACE$;
 
-use Jade\ModulerCore\Abase\Service\ServiceInterface;
+use APP\Abase\Service\ServiceInterface;
 
 interface $CLASS$ extends ServiceInterface
 {
@@ -41,7 +41,7 @@ interface $CLASS$ extends ServiceInterface
     |--------------------------------------------------------------------------
     | 管：Manage - Can
     |--------------------------------------------------------------------------
-    */ 
+    */
     public function tryManage$MODEL$($fields);
 
     /*

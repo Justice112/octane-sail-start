@@ -5,7 +5,7 @@ namespace $NAMESPACE$;
 use $NAMESPACE_INTERFACE$\$CLASS$;
 use $ROOT_NAMESPACE$\Models\$MODEL$;
 use $ROOT_NAMESPACE$\Http\Resources\$MODEL$Resource;
-use Jade\ModulerCore\Abase\Repository\BaseRepository;
+use APP\Abase\Repository\BaseRepository;
 
 class $CLASS$Eloquent extends BaseRepository implements $CLASS$
 {

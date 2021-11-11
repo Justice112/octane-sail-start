@@ -44,7 +44,7 @@ class GenerateServiceCommand extends GeneratorCommand
         /** @var \Nwidart\Modules\Laravel\LaravelFileRepository $laravelFileRepository */
         $laravelFileRepository = $this->laravel['modules'];
 
-        return $laravelFileRepository->config('paths.generator.services.path', 'Services');
+        return $laravelFileRepository->config('paths.generator.service.path', 'Services');
     }
 
     /**
@@ -159,7 +159,7 @@ class GenerateServiceCommand extends GeneratorCommand
     /**
      * @return mixed
      */
-    protected function getDestinationFilePath($config = 'services')
+    protected function getDestinationFilePath($config = 'service')
     {
         /** @var \Nwidart\Modules\Laravel\LaravelFileRepository $laravelFileRepository */
         $laravelFileRepository = $this->laravel['modules'];
@@ -187,7 +187,7 @@ class GenerateServiceCommand extends GeneratorCommand
         $interfacePath = str_replace('\\', '/', $this->getDestinationFilePath());
         $this->interfaceHandle($interfacePath);
 
-        $implPath = Str::before(str_replace('\\', '/', $this->getDestinationFilePath('services-impl')), '.php') . 'Impl.php';
+        $implPath = Str::before(str_replace('\\', '/', $this->getDestinationFilePath('service-impl')), '.php') . 'Impl.php';
         $this->implementationHandle($implPath);
 
         $path = module_path($this->getModuleName()) . '/Providers/ServiceServiceProvider.php';

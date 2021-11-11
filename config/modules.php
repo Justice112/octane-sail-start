@@ -72,7 +72,7 @@ return [
                 'STUDLY_NAME',
             ],
         ],
-        'gitkeep' => true,
+        'gitkeep' => false,
     ],
     'paths' => [
         /*
@@ -134,8 +134,8 @@ return [
 
             'repository'    => ['path' => 'Repositories', 'generate' => true],
             'repository-eloquent'    => ['path' => 'Repositories/Eloquent', 'generate' => true],
-            'services'      => ['path' => 'Services', 'generate' => true],
-            'services-impl'      => ['path' => 'Services/Impl', 'generate' => true],
+            'service'      => ['path' => 'Services', 'generate' => true],
+            'service-impl'      => ['path' => 'Services/Impl', 'generate' => true],
 
             // 'event' => ['path' => 'Events', 'generate' => false],
             // 'listener' => ['path' => 'Listeners', 'generate' => false],

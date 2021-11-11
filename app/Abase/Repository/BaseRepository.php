@@ -1,6 +1,6 @@
 <?php
 
-namespace Jade\ModulerCore\Abase\Repository;
+namespace APP\Abase\Repository;
 
 use Prettus\Repository\Eloquent\BaseRepository as PrettusBaseRepository;
 

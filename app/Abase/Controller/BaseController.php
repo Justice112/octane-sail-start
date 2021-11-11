@@ -1,15 +1,15 @@
 <?php
 
-namespace Jade\ModulerCore\Abase\Controller;
+namespace APP\Abase\Controller;
 
 use Exception;
 use Illuminate\Container\Container as Application;
 use Illuminate\Routing\Controller;
-use Jade\ModulerCore\Abase\Service\ServiceInterface;
+use APP\Abase\Service\ServiceInterface;
 
 /**
  * Class BaseController
- * @package Jade\ModulerCore\Abase\Controller
+ * @package APP\Abase\Controller
  * @author Jade <zhengyiunity@gmail.com>
  */
 abstract class BaseController extends Controller
@@ -39,7 +39,7 @@ abstract class BaseController extends Controller
     {
         $service = $this->app->make($this->service());
         if (!$service instanceof ServiceInterface) {
-            throw new Exception("Class {$this->service()} must be an instance of Jade\ModulerCore\Abase\Service\ServiceInterface");
+            throw new Exception("Class {$this->service()} must be an instance of APP\Abase\Service\ServiceInterface");
         }
 
         return $this->service = $service;

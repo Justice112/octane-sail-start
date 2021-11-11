@@ -1,6 +1,6 @@
 <?php
 
-namespace Jade\ModulerCore\Abase\Service;
+namespace APP\Abase\Service;
 
 abstract class BaseService implements ServiceInterface
 {

@@ -3,7 +3,7 @@
 namespace $NAMESPACE$;
 
 use $NAMESPACE_INTERFACE$\$CLASS$;
-use Jade\ModulerCore\Abase\Service\BaseService;
+use APP\Abase\Service\BaseService;
 
 class $CLASS$Impl extends BaseService implements $CLASS$
 {

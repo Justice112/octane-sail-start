@@ -2,7 +2,6 @@
 
 namespace App\Console\Commands\Modular;
 
-use Nwidart\Modules\Generators\ModuleGenerator;
 use Illuminate\Console\Command;
 use Nwidart\Modules\Contracts\ActivatorInterface;
 use Symfony\Component\Console\Input\InputArgument;
@@ -44,7 +43,7 @@ class ModularMakeCommand extends Command
         $success = true;
 
         foreach ($names as $name) {
-            $code = with(new ModuleGenerator($name))
+            $code = with(new ModularGenerator($name))
                 ->setFilesystem($this->laravel['files'])
                 ->setModule($this->laravel['modules'])
                 ->setConfig($this->laravel['config'])
@@ -58,17 +57,6 @@ class ModularMakeCommand extends Command
             if ($code === E_ERROR) {
                 $success = false;
             }
-
-             // 创建 repository services api-controllers
-             $this->call('modular:make-repository', [
-                'name' => $name . 'Repository', 'module' => $name,
-            ]);
-            $this->call('modular:make-service', [
-                'name' => $name . 'Service', 'module' => $name, '--model' => $name
-            ]);
-            $this->call('modular:make-api', [
-                'name' => $name . 'Controller', 'module' => $name, '--service' => $name . 'Service'
-            ]);
         }
 
         return $success ? 0 : E_ERROR;

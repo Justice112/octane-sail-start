@@ -1248,16 +1248,16 @@
         },
         {
             "name": "jiannei/laravel-logger",
-            "version": "1.2.1",
+            "version": "v1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Jiannei/laravel-logger.git",
-                "reference": "31b70c212b1619a718eab663f73bb58ea6acbd90"
+                "reference": "9e96939a30360095eeaa125f3d9442e125b9ceb5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Jiannei/laravel-logger/zipball/31b70c212b1619a718eab663f73bb58ea6acbd90",
-                "reference": "31b70c212b1619a718eab663f73bb58ea6acbd90",
+                "url": "https://api.github.com/repos/Jiannei/laravel-logger/zipball/9e96939a30360095eeaa125f3d9442e125b9ceb5",
+                "reference": "9e96939a30360095eeaa125f3d9442e125b9ceb5",
                 "shasum": ""
             },
             "require": {
@@ -1265,7 +1265,6 @@
                 "jiannei/helpers": "^0.2.1"
             },
             "require-dev": {
-                "jiannei/laravel-enum": "^1.2",
                 "orchestra/testbench": "^6.4",
                 "phpunit/phpunit": "^9.4"
             },
@@ -1298,9 +1297,9 @@
             "description": "Laravel logger.",
             "support": {
                 "issues": "https://github.com/Jiannei/laravel-logger/issues",
-                "source": "https://github.com/Jiannei/laravel-logger/tree/1.2.1"
+                "source": "https://github.com/Jiannei/laravel-logger/tree/v1.3.0"
             },
-            "time": "2021-06-16T09:38:13+00:00"
+            "time": "2021-11-13T15:36:39+00:00"
         },
         {
             "name": "jiannei/laravel-response",
